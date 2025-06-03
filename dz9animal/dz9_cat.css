@@ -1,0 +1,17 @@
+
+body { font-family: Arial, sans-serif; }
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: brown;
+}
+nav a.active {
+    background-color: orange;
+    font-weight: bold;
+}
+nav {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+}
+img { width: 300px; height: auto; }

@@ -1,0 +1,16 @@
+
+body { font-family: Arial, sans-serif; }
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: hotpink;
+}
+nav a.active {
+    background-color: orangered;
+    font-weight: bold;
+}
+nav {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+}
