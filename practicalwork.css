@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: ivory;
+}
+.panel {
+    width: 220px;
+    background: ivory;
+    height: 100vh;
+    float: left;
+    padding: 20px;
+    border: darkgrey solid 1px;
+}
+.panel ul {
+    list-style: none;
+    padding: 0;
+}
+.panel li {
+    margin-bottom: 10px;
+}
+.header {
+    background: cornflowerblue;
+    color: white;
+    padding: 10px 20px;
+    height: 50px;
+}
+.main {
+    margin-left: 220px;
+    padding: 20px;
+}
+.profile-info {
+    display: flex;
+}
+.photo {
+    width: 150px;
+    text-align: center;
+    border: red solid 1px;
+}
+.photo img {
+    width: 150px;
+    border-radius: 30%;
+}
+.details {
+    margin-left: 20px;
+}
+.stats {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+.friends {
+    margin-top: 20px;
+}
+.photos {
+    margin-top: 20px;
+    border: red solid 1px;
+}
+.friends img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-right: 5px;
+
+}
+.photos img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 5px;
+
+}
