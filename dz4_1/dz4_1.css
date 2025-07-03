@@ -1,0 +1,14 @@
+span {color: red;}
+.li-class {color: yellow;
+    text-decoration: underline;}
+#elem {color: lime;
+    text-decoration: underline;}
+li {color: green;
+    text-decoration: underline;}
+p  {color: blue;
+    font-weight: bold;}
+div {
+    color: indigo;
+    font-family: "Malgun Gothic Semilight", nospace, monospace ;
+}
+.span-class  {color: magenta;}
