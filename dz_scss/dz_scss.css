@@ -1,0 +1,105 @@
+.calculator {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.calculator .menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.calculator .menu div {
+    font-weight: bold;
+    cursor: pointer;
+}
+.calculator input.display {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: right;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.calculator .modes,
+.calculator .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.calculator .modes label,
+.calculator .row label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+}
+.calculator .row button {
+    flex: 1 1 9%;
+    margin: 3px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.calculator .row button:disabled {
+    background-color: #eaeaea;
+    cursor: not-allowed;
+}
+.calculator .row button:hover:not(:disabled) {
+    background-color: #f0f0f0;
+}
+.calculator .row button.red {
+    background-color: #dc3545;
+    color: #fff;
+}
+.calculator .row button.red:hover {
+    background-color: #b52a37;
+}
+.calculator .row button.blue {
+    background-color: #007bff;
+    color: #fff;
+}
+.calculator .row button.blue:hover {
+    background-color: #0062cc;
+}
+.calculator .row button.purple {
+    background-color: #6f42c1;
+    color: #fff;
+}
+.calculator .row button.purple:hover {
+    background-color: #5936a7;
+}
+@media (max-width: 480px) {
+    .calculator {
+        padding: 10px;
+    }
+    .calculator .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .calculator .menu div {
+        margin-bottom: 5px;
+    }
+    .calculator .modes,
+    .calculator .row {
+        justify-content: center;
+    }
+    .calculator .row button {
+        flex: 1 1 22%;
+        font-size: 0.9rem;
+        padding: 6px 8px;
+    }
+    .calculator input.display {
+        font-size: 1.2rem;
+    }
+}

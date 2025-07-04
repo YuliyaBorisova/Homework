@@ -1,0 +1,135 @@
+$btn-padding: 8px 12px;
+$border-radius: 6px;
+
+
+$color-red: #DC3545;
+$color-purple: #6F42C1;
+$color-bg: #f9f9f9;
+$color-btn-bg: #fff;
+$color-border: #ccc;
+
+.calculator {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: $color-bg;
+  border: 1px solid $color-border;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+    div {
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  input.display {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: right;
+    background: #fff;
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+  }
+
+  .modes,
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.9rem;
+    }
+  }
+
+  .row {
+    button {
+      flex: 1 1 9%;
+      margin: 3px;
+      padding: $btn-padding;
+      font-size: 1rem;
+      border: 1px solid $color-border;
+      background-color: $color-btn-bg;
+      border-radius: $border-radius;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:disabled {
+        background-color: #eaeaea;
+        cursor: not-allowed;
+      }
+
+      &:hover:not(:disabled) {
+        background-color: #f0f0f0;
+      }
+
+      &.red {
+        background-color: $color-red;
+        color: #fff;
+
+        &:hover {
+          background-color: darken($color-red, 10%);
+        }
+      }
+
+      &.blue {
+        background-color: $color-blue;
+        color: #fff;
+
+        &:hover {
+          background-color: darken($color-blue, 10%);
+        }
+      }
+
+      &.purple {
+        background-color: $color-purple;
+        color: #fff;
+
+        &:hover {
+          background-color: darken($color-purple, 10%);
+        }
+      }
+    }
+  }
+
+  // 📱 Адаптивность под мобильные устройства
+  @media (max-width: 480px) {
+    padding: 10px;
+
+    .menu {
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        margin-bottom: 5px;
+      }
+    }
+
+    .modes,
+    .row {
+      justify-content: center;
+    }
+
+    .row button {
+      flex: 1 1 22%;
+      font-size: 0.9rem;
+      padding: 6px 8px;
+    }
+
+    input.display {
+      font-size: 1.2rem;
+    }
+  }
+}
