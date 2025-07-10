@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Игра</title>
+    <link rel="stylesheet" href="./game.css" />
+</head>
+<body>
+<h2>Привет, <span id="player-name"></span>!</h2>
+<p>Выбери: камень, ножницы или бумага</p>
+
+<div id="choices">
+    <img src="https://papik.pro/uploads/posts/2023-03/1677798919_papik-pro-p-krasivie-kamni-risunok-dlya-detei-46.png" alt="Камень" data-choice="rock" />
+    <img src="https://clipartix.com/wp-content/uploads/2016/04/Paper-clip-art-free-free-clipart-images.png" alt="Бумага" data-choice="бумага" />
+    <img src="https://i.pinimg.com/736x/48/0f/d3/480fd31c9ac8e86e5eb930af937b0448.jpg" alt="Ножницы" data-choice="ножницы" />
+
+</div>
+
+<div id="result"></div>
+
+<div>
+    <p>Раунд: <span id="round">0</span></p>
+    <p>Побед игрока: <span id="player-score">0</span></p>
+    <p>Побед компьютера: <span id="computer-score">0</span></p>
+</div>
+
+<div id="after-game" style="display:none;">
+    <button onclick="restart()">Играть снова</button>
+    <button onclick="viewLeaderboard()">Посмотреть таблицу</button>
+</div>
+
+<div id="leaderboard" style="display:none;">
+    <h3>Турнирная таблица</h3>
+    <ul id="leaderboard-list"></ul>
+</div>
+
+<script src="./game.js"></script>
+</body>
+</html>
